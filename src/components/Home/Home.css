@@ -1,0 +1,55 @@
+.home {
+  background: url("/src/assets/images/travel-banner.jpeg") no-repeat;
+  background-size: cover;
+  background-position: 0% 17%;
+  position: relative;
+}
+
+.dark-overlay::before {
+  content: '';
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 50%;
+  height: 100%;
+  width: 100%;
+  padding: 8rem 14rem;
+}
+
+
+.travel-heading {
+  font-size: 5rem;
+  font-weight: bolder;
+  padding: 3rem;
+  /* z-index: 1; */
+}
+
+.travel-heading span {
+  color: #0bdef9;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .home {
+    background-position: 0% 30%;
+    padding: 1rem;
+
+  }
+
+  .travel-heading {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+
+  .form-title {
+    margin: 0;
+    padding: 0;
+  }
+
+  .form-title p {
+    padding: 0;
+  }
+}
