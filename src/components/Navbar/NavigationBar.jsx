@@ -2,13 +2,16 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import ContactBar from "./ContactBar";
 import "./NavigationBar.css";
+import logo from "/src/assets/images/logo-2.png";
+import top_arrow from "/src/assets/images/top_arrow.png";
 
 function NavigationBar() {
   return (
     <div className="top-bar">
       <div className="contact-bar">
         <img
-          src="/src/assets/images/top_arrow.png"
+          // src="/src/assets/images/top_arrow.png"
+          src={top_arrow}
           className="d-none d-lg-block"
           style={{ background: "inherit" }}
         />
@@ -19,7 +22,10 @@ function NavigationBar() {
         <Navbar expand="lg" className="navbar-dark p-0">
           <Container className="p-0 align-self-start">
             <Navbar.Brand href="/" className="p-0">
-              <img src="/src/assets/images/logo-2.png" />
+              <img
+                // src="/src/assets/images/logo-2.png"
+                src={logo}
+              />
             </Navbar.Brand>
             <Navbar.Toggle></Navbar.Toggle>
           </Container>

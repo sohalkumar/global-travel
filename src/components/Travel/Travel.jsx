@@ -3,6 +3,14 @@ import Container from "react-bootstrap/Container";
 import Button from "../UI/Button/Button";
 import StyledHeading from "../UI/Typography/StyledHeading";
 import "./Travel.css";
+import travel_icon from "/src/assets/icon/travel-icon.png";
+import travel_icon2 from "/src/assets/icon/travel-icon2.png";
+import travel_icon3 from "/src/assets/icon/travel-icon3.png";
+import travel_icon4 from "/src/assets/icon/travel-icon4.png";
+import best_place_1 from "/src/assets/images/1.jpg";
+import best_place_2 from "/src/assets/images/2.jpg";
+import best_place_3 from "/src/assets/images/3.jpg";
+import london from "/src/assets/images/London.jpg";
 
 function Travel() {
   return (
@@ -23,7 +31,8 @@ function Travel() {
             <Card.Img
               className="w-75"
               variant="top"
-              src="/src/assets/icon/travel-icon.png"
+              // src="/src/assets/icon/travel-icon.png"
+              src={travel_icon}
             ></Card.Img>
             <Card.Body className="px-0">
               <Card.Title>
@@ -51,7 +60,8 @@ function Travel() {
             <Card.Img
               className="w-75"
               variant="top"
-              src="/src/assets/icon/travel-icon2.png"
+              // src="/src/assets/icon/travel-icon2.png"
+              src={travel_icon2}
             ></Card.Img>
             <Card.Body className="px-0">
               <Card.Title>
@@ -79,7 +89,8 @@ function Travel() {
             <Card.Img
               className="w-75"
               variant="top"
-              src="/src/assets/icon/travel-icon3.png"
+              // src="/src/assets/icon/travel-icon3.png"
+              src={travel_icon3}
             ></Card.Img>
             <Card.Body className="px-0">
               <Card.Title>
@@ -107,7 +118,8 @@ function Travel() {
             <Card.Img
               className="w-75"
               variant="top"
-              src="/src/assets/icon/travel-icon4.png"
+              // src="/src/assets/icon/travel-icon4.png"
+              src={travel_icon4}
             ></Card.Img>
             <Card.Body className="px-0">
               <Card.Title>
@@ -143,7 +155,8 @@ function Travel() {
           </p>
         </div>
         <img
-          src="/src/assets/images/London.jpg"
+          // src="/src/assets/images/London.jpg"
+          src={london}
           alt="graphic depicting London"
           width={"100%"}
         />
@@ -164,7 +177,11 @@ function Travel() {
             border="white"
             className="justify-content-center align-items-center"
           >
-            <Card.Img variant="top" src="/src/assets/images/1.jpg"></Card.Img>
+            <Card.Img
+              variant="top"
+              // src="/src/assets/images/1.jpg"
+              src={best_place_1}
+            ></Card.Img>
             <Card.Body>
               <Card.Title>
                 <h3>Holiday Tour</h3>
@@ -180,7 +197,11 @@ function Travel() {
             border="white"
             className="justify-content-center align-items-center"
           >
-            <Card.Img variant="top" src="/src/assets/images/2.jpg"></Card.Img>
+            <Card.Img
+              variant="top"
+              // src="/src/assets/images/2.jpg"
+              src={best_place_2}
+            ></Card.Img>
             <Card.Body>
               <Card.Title>
                 <h3>New York</h3>
@@ -196,7 +217,11 @@ function Travel() {
             border="white"
             className="justify-content-center align-items-center"
           >
-            <Card.Img variant="top" src="/src/assets/images/3.jpg"></Card.Img>
+            <Card.Img
+              variant="top"
+              // src="/src/assets/images/3.jpg"
+              src={best_place_3}
+            ></Card.Img>
             <Card.Body>
               <Card.Title>
                 <h3>London</h3>
@@ -216,7 +241,13 @@ function Travel() {
         <div className="bg-black bg-opacity-50"></div>
         <div className="italy-travel-text text-white text-center">
           <h1 className="fw-bold">ITALY TRAVEL GUIDE</h1>
-          <p className="py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, odio harum, laudantium repudiandae commodi obcaecati officia fugiat omnis nisi enim rerum cupiditate accusantium aliquam et, cum veritatis qui libero nihil saepe a. Ipsum, laboriosam explicabo animi, modi dolorem quae nesciunt quos ex culpa beatae esse!</p>
+          <p className="py-3">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,
+            odio harum, laudantium repudiandae commodi obcaecati officia fugiat
+            omnis nisi enim rerum cupiditate accusantium aliquam et, cum
+            veritatis qui libero nihil saepe a. Ipsum, laboriosam explicabo
+            animi, modi dolorem quae nesciunt quos ex culpa beatae esse!
+          </p>
         </div>
 
         <Container className="d-flex justify-content-center gap-4 pb-5">

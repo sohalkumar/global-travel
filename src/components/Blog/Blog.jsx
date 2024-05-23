@@ -1,6 +1,8 @@
 import Card from "react-bootstrap/Card";
 // import Container from "react-bootstrap/Container";
 import StyledHeading from "../UI/Typography/StyledHeading";
+import blog_image from "/src/assets/images/blog-image.jpg";
+import blog_image_0 from "/src/assets/images/blog-image0.jpg";
 
 function Blog() {
   return (
@@ -16,7 +18,8 @@ function Blog() {
           <Card border="white">
             <Card.Img
               variant="top"
-              src="/src/assets/images/blog-image0.jpg"
+              // src="/src/assets/images/blog-image0.jpg"
+              src={blog_image_0}
             ></Card.Img>
             <Card.ImgOverlay
               style={{
@@ -58,7 +61,8 @@ function Blog() {
           <Card border="white">
             <Card.Img
               variant="top"
-              src="/src/assets/images/blog-image.jpg"
+              // src="/src/assets/images/blog-image.jpg"
+              src={blog_image}
             ></Card.Img>
             <Card.ImgOverlay
               style={{

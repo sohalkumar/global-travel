@@ -1,14 +1,30 @@
 import "./Footer.css";
+import facebook_icon from "/src/assets/icon/facebook.png";
+import instagram_icon from "/src/assets/icon/instagram.png";
+import linkedin_icon from "/src/assets/icon/linkedin.png";
+import twitter_icon from "/src/assets/icon/Twitter.png";
 
 function Footer() {
   return (
     <>
       <div id="footer">
         <div className="d-flex gap-4 py-3">
-          <img src="/src/assets/icon/facebook.png" />
-          <img src="/src/assets/icon/twitter.png" />
-          <img src="/src/assets/icon/linkedin.png" />
-          <img src="/src/assets/icon/instagram.png" />
+          <img
+            // src="/src/assets/icon/facebook.png"
+            src={facebook_icon}
+          />
+          <img
+            // src="/src/assets/icon/twitter.png"
+            src={twitter_icon}
+          />
+          <img
+            // src="/src/assets/icon/linkedin.png"
+            src={linkedin_icon}
+          />
+          <img
+            // src="/src/assets/icon/instagram.png"
+            src={instagram_icon}
+          />
         </div>
         <div className="row gap-3">
           <div className="col-12 col-lg-3">

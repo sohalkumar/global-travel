@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Button from "../UI/Button/Button";
 import StyledHeading from "../UI/Typography/StyledHeading";
 import "./About.css";
+import aeroplane from "/src/assets/images/plane-img.png";
 
 function About() {
   return (
@@ -22,7 +23,8 @@ function About() {
           </p>
 
           <img
-            src="/src/assets/images/plane-img.png"
+            // src="/src/assets/images/plane-img.png"
+            src={aeroplane}
             alt="an aeroplane graphic"
             className="my-2"
           ></img>
