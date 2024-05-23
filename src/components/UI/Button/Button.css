@@ -3,10 +3,6 @@
   padding: 1rem 3rem;
 }
 
-.round {
-  border-radius: 100px;
-}
-
 @media screen and (max-width: 768px) {
   .button {
     padding: 0.75rem 2rem;

@@ -1,13 +1,30 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Global Travel</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Travel</title>
+</head>
+
+<body>
+  <div id="loading" style="width: 50%; margin: auto;">
+    <img src="/src/assets/images/loading.gif" width="100%" />
+  </div>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+<script>
+  document.onreadystatechange = function () {
+    let state = document.readyState;
+    if (state === "loading" || state === "interactive") {
+      document.getElementById("root").style.visibility = "hidden";
+    } else {
+      document.getElementById("root").style.visibility = "unset";
+      document.getElementById("loading").style.display = "none";
+    }
+  }
+</script>
+
 </html>

@@ -1,15 +1,25 @@
 /* eslint-disable react/prop-types */
 import "./Button.css";
 
-function Button({ className, text, href, btnColor, textColor, rounded }) {
+function Button({
+  className,
+  text,
+  btnColor,
+  textColor,
+  rounded,
+  style,
+  type,
+  onClick,
+}) {
   return (
     <>
       <button
-        className={`${className} button ${rounded === true ? "round " : ""}`}
-        style={{ color: textColor, background: btnColor }}
-        onClick={() => {
-          window.location.href = `/${href}`;
-        }}
+        className={`${className} button ${
+          rounded === true ? "rounded-pill" : ""
+        }`}
+        style={{ color: textColor, background: btnColor, ...style }}
+        onClick={onClick}
+        type={type || "button"}
       >
         {text}
       </button>

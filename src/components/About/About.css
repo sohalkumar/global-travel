@@ -1,0 +1,45 @@
+.about {
+  padding: 2rem 14rem;
+}
+
+.about-para-container {
+  background: linear-gradient(-90deg, #0d1b3f, #096485);
+  margin: 5rem 0rem;
+
+  padding: 1rem 0.75rem;
+  border-radius: 2px;
+  width: 85%;
+}
+
+.about-para-container img {
+  position: absolute;
+  right: -10rem;
+  top: -4rem;
+  width: 60%;
+}
+
+.about-para-container p {
+  width: 65%;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 2rem 1rem;
+  }
+
+  .about-para-container img {
+    position: relative;
+    top: unset;
+    right: unset;
+    width: 100%;
+  }
+
+  .about-para-container {
+    margin: 3rem 0;
+    width: 100%
+  }
+
+  .about-para-container p {
+    width: 100%;
+  }
+}

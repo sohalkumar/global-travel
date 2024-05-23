@@ -1,25 +1,34 @@
 /* eslint-disable react/prop-types */
-import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 
 function ContactBar({ className }) {
   return (
-    <Container
-      className={`${className} bg-white d-none d-lg-flex text-secondary py-3`}
+    <div
+      className={`${className} d-none d-lg-flex bg-white justify-content-end text-secondary py-0 gap-5`}
+      style={{ paddingRight: "14rem" }}
     >
-      <Container className="d-flex align-items-center gap-1">
+      <div
+        className="d-flex align-items-center gap-1"
+        style={{ minWidth: "fit-content" }}
+      >
         <Image src="/src/assets/images/1.png" />
         <p>145.street road new york</p>
-      </Container>
-      <Container className="d-flex align-items-center gap-1">
+      </div>
+      <div
+        className="d-flex align-items-center gap-1"
+        style={{ minWidth: "fit-content" }}
+      >
         <Image src="/src/assets/images/2.png" />
         <p>+71 5678954378</p>
-      </Container>
-      <Container className="d-flex align-items-center gap-1">
+      </div>
+      <div
+        className="d-flex align-items-center gap-1"
+        style={{ minWidth: "fit-content" }}
+      >
         <Image src="/src/assets/images/3.png" />
         <p>Demo@hmail.com</p>
-      </Container>
-    </Container>
+      </div>
+    </div>
   );
 }
 
