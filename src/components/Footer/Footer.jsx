@@ -1,8 +1,9 @@
+import Button from "../UI/Button/Button";
 import "./Footer.css";
+import twitter_icon from "/src/assets/icon/Twitter.png";
 import facebook_icon from "/src/assets/icon/facebook.png";
 import instagram_icon from "/src/assets/icon/instagram.png";
 import linkedin_icon from "/src/assets/icon/linkedin.png";
-import twitter_icon from "/src/assets/icon/Twitter.png";
 
 function Footer() {
   return (
@@ -26,15 +27,16 @@ function Footer() {
             src={instagram_icon}
           />
         </div>
-        <div className="row gap-3">
-          <div className="col-12 col-lg-3">
+        <div className="d-flex flex-column justify-content-between flex-lg-row">
+          <div>
             <h3 className="py-3">CONTACT US</h3>
-            <p className="px-0 pe-lg-4">
-              123 Second Street Fifth Avenue, Manhattan, <br /> New York <br />{" "}
-              +9876543210
+            <p>
+              123 Second Street Fifth <br /> Avenue,
+              <br /> Manhattan, New York <br /> +9876543210
             </p>
           </div>
-          <div className="col-12 col-lg-4 px-2 px-lg-0">
+
+          <div>
             <h3 className="py-3">ADDITIONAL LINKS</h3>
             <a href="">About us</a>
             <a href="">Terms and conditions</a>
@@ -42,11 +44,42 @@ function Footer() {
             <a href="">News</a>
             <a href="">Contact us</a>
           </div>
-          <div className="col-12 col-lg-5 px-2 px-lg-0">
+
+          <div>
             <h3 className="py-3">CONTACT</h3>
-            <div className="row">
-              <input type="text" placeholder="Name" className="col px-2" />
-              <input type="text" placeholder="Email" className="col px-2" />
+            <div>
+              <div className="d-flex flex-column flex-lg-row gap-4">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className="px-2"
+                  style={{ width: "100%", minWidth: "unset" }}
+                />
+                <input
+                  type="text"
+                  placeholder="Email"
+                  className="px-2"
+                  style={{ width: "100%", minWidth: "unset" }}
+                />
+              </div>
+            </div>
+            <div className="mt-3">
+              <textarea
+                type="text"
+                placeholder="Comment"
+                className="px-2"
+                style={{ width: "100%", minWidth: "unset" }}
+              />
+            </div>
+            <div className="text-center text-lg-end">
+              <Button
+                text={"Submit"}
+                btnColor={"#000"}
+                onClick={() => {
+                  window.location.href = "/#";
+                }}
+                textColor={"#fff"}
+              />
             </div>
           </div>
         </div>

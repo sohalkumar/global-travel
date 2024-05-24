@@ -10,17 +10,6 @@ a {
   color: white
 }
 
-input {
-  color: gray;
-  height: 2.5rem;
-  max-width: 50%;
-  border: 1px solid gray;
-}
-
-input:focus {
-  outline: 1px solid #ee590e;
-}
-
 @media screen and (max-width:768px) {
   #footer {
     padding: 2rem 1rem;
